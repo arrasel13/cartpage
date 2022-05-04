@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/fontawesome6/css/all.min.css">
+
+    <!-- CSS Links -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Cart</title>
+  </head>
+  <body>
+    
+    <!-- Header start -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart_offcanvus.html">Cart Offcanvas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="checkout.html">Checkout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header end -->
+
+    <!-- Shopping Cart start -->
+    <section class="shopping_cart_head">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 my-4">
+            <div class="sc_head_title">
+              <h1>Checkout Page</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Shopping Cart end -->
+
+    <!-- Shop Cart Table start -->    
+    <section class="shopping_cart_content">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <h4>Billing Address</h4>
+            <div class="bill_info">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="firstName" class="form-label">First Name</label>
+                      <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input type="text" class="form-control" id="lastName">
+                    </div>
+                    <div class="col-md-12">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputAddress2" class="form-label">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="inputCity" class="form-label">City</label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputState" class="form-label">State</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">Zip</label>
+                      <input type="text" class="form-control" id="inputZip">
+                    </div>
+
+                    <hr>
+
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Shipping address is the same as my billing address
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Save this information for next time
+                        </label>
+                      </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="credit" checked required>
+                            <label class="form-check-label" for="credit">
+                                Credit card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="debit" required>
+                            <label class="form-check-label" for="debit">
+                                Debit card
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" required>
+                            <label class="form-check-label" for="paypal">
+                                PayPal
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="nameOnCard" class="form-label">Name on card</label>
+                        <input type="text" class="form-control" id="nameOnCard">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="creditCardNumber" class="form-label">Credit card number</label>
+                        <input type="number" class="form-control" id="creditCardNumber">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="expiration" class="form-label">Expiration</label>
+                        <input type="text" class="form-control" id="expiration">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="cvv_number" class="form-label">CVV</label>
+                        <input type="number" class="form-control" id="cvv_number">
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary checkout_btn">Sign in</button>
+                    </div>
+                  </form>
+            </div>
+          </div>
+
+
+          <div class="row">
+              <div class="col-lg-12">
+                <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Checkout Button</button>
+              </div>
+          </div>
+
+        </div>
+      </div>
+
+       <!-- Offcanvas content start -->
+       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <!-- <h5 id="offcanvasRightLabel">Offcanvas right</h5> -->
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            
+            <!-- Checkout Content start -->
+            <section class="checkout_form_content">
+                <div class="row justify-content-center">
+                    <div class="col-11">
+                        <h4 class="pt-2 pb-3">Billing Address</h4>
+                        <div class="bill_info">
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                  <label for="firstName" class="form-label">First Name</label>
+                                  <input type="text" class="form-control" id="firstName">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="lastName" class="form-label">Last Name</label>
+                                  <input type="text" class="form-control" id="lastName">
+                                </div>
+                                <div class="col-md-12">
+                                  <label for="email" class="form-label">Email</label>
+                                  <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputAddress" class="form-label">Address</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputAddress2" class="form-label">Address 2</label>
+                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputCity" class="form-label">City</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="inputState" class="form-label">State</label>
+                                  <select id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-2">
+                                  <label for="inputZip" class="form-label">Zip</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                                </div>
+            
+                                <hr>
+            
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Shipping address is the same as my billing address
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Save this information for next time
+                                    </label>
+                                  </div>
+                                </div>
+            
+                                <hr>
+            
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" id="credit" checked required>
+                                        <label class="form-check-label" for="credit">
+                                            Credit card
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" id="debit" required>
+                                        <label class="form-check-label" for="debit">
+                                            Debit card
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" required>
+                                        <label class="form-check-label" for="paypal">
+                                            PayPal
+                                        </label>
+                                    </div>
+                                </div>
+            
+                                <div class="col-md-6">
+                                    <label for="nameOnCard" class="form-label">Name on card</label>
+                                    <input type="text" class="form-control" id="nameOnCard">
+                                </div>
+            
+                                <div class="col-md-6">
+                                    <label for="creditCardNumber" class="form-label">Credit card number</label>
+                                    <input type="number" class="form-control" id="creditCardNumber">
+                                </div>
+            
+                                <div class="col-md-6">
+                                    <label for="expiration" class="form-label">Expiration</label>
+                                    <input type="text" class="form-control" id="expiration">
+                                </div>
+            
+                                <div class="col-md-6">
+                                    <label for="cvv_number" class="form-label">CVV</label>
+                                    <input type="number" class="form-control" id="cvv_number">
+                                </div>
+                                
+                                <hr>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary checkout_btn">Continue to Checkout</button>
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Checkout Content end -->
+        </div>
+        </div>
+        <!-- Offcanvas content end -->
+
+    </section>
+    <!-- Shop Cart Table end -->
+
+
+
+
+    <!-- JS Links -->
+    <script src="js/jquery_3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
