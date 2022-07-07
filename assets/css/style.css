@@ -166,6 +166,37 @@ body{
   white-space: nowrap;
   width: 100%;
 }
+.cmnBtn{
+  font-size: 14px;
+  padding: 10px 16px;
+  margin-bottom: 0;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+}
+.couponBtn, .checkoutBtn{
+  /* height: 50px; */
+  background-color: #24a0ed;
+  color: #fff;
+  border: 1px solid #24a0ed;
+}
+.continueShoppingBtn{
+  /* height: 50px; */
+  background-color: #292b2c;
+  color: #fff;
+  border: 1px solid #292b2c;
+}
 .wfc_applyCouponCodeBtnStyle{
   display: inline;
   background-color: transparent;
@@ -181,7 +212,7 @@ body{
 }
 
 .wfc_applyCouponCode .wfc_applyCouponCodeField{
-  height: 40px;
+  height: 30px;
   display: none;
   padding: 5px;
   border: 1px solid #eaeaea;

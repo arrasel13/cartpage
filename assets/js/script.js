@@ -52,13 +52,13 @@ $( ".wfc_applyCouponCodeBtn" ).click(function() {
   if ($this.hasClass("text_change")) {
 
       $this.html("Have any Coupon?");
-      $this.removeClass("btn btn-primary").addClass("wfc_applyCouponCodeBtnStyle");
+      $this.removeClass("cmnBtn couponBtn").addClass("wfc_applyCouponCodeBtnStyle");
       $( "input.wfc_applyCouponCodeField" ).hide();
 
   } else {
 
       $this.html("Coupon");
-      $this.addClass("btn btn-primary").removeClass("wfc_applyCouponCodeBtnStyle");
+      $this.addClass("cmnBtn couponBtn").removeClass("wfc_applyCouponCodeBtnStyle");
       $( "input.wfc_applyCouponCodeField" ).show( "slow", "linear" );
 
   }
