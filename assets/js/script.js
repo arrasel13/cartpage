@@ -1,13 +1,6 @@
-// function openForm() {
-//     document.getElementById("myForm").style.display = "block";
-// }
-
-// function closeForm() {
-//     document.getElementById("myForm").style.display = "none";
-// }
 
 $(function() {
-    $('.clickMore').on('click', function() {
+    $('.wfcClickMore').on('click', function() {
 
       const box = document.getElementById('myForm');
       if (box.style.display !== "none") {
@@ -35,7 +28,7 @@ $(function() {
   
       show_more.slideToggle('fast');
       $("i", this).toggleClass("fa-cart-shopping fa-close");
-      $('.clickMore').not(this).find("i").removeClass("fa-close").addClass("fa-cart-shopping");
+      $('.wfcClickMore').not(this).find("i").removeClass("fa-close").addClass("fa-cart-shopping");
 
     });
 });

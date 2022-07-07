@@ -7,7 +7,7 @@ body{
   position: relative;
 }
 
-.ofcan1{
+.wfcCarticon{
   display: grid;
   justify-content: center;
   align-items: center;
@@ -22,16 +22,16 @@ body{
   background-color: #0000ff;
   transition: 0.3s;
 }
-.ofcan1 i{
+.wfcCarticon i{
   font-size: 20px;
   color: #fff;
   transition: 0.3s;
 }
-.ofcan1:hover{
+.wfcCarticon:hover{
   border: 1px solid #0000ff;
   background-color: #0000ff;
 }
-.ofcan1:hover i{
+.wfcCarticon:hover i{
   transform: scale(1.10);
 }
 
@@ -52,20 +52,6 @@ body{
   background-color: #0000ff;
 }
 
-
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  /* background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px; */
-}
   
 /* The popup form - hidden by default */
 .wfc_cart_info {
@@ -94,10 +80,6 @@ body{
 
 
 /* Cart Info Header start */
-
-.offcanvas-header {
-  background-color: #f5f5f5;
-}
 
 .wfc_cart_content{}
 .wfc_cart_inner{
