@@ -2,7 +2,7 @@
 $(function() {
     $('.wfcClickMore').on('click', function() {
 
-      const box = document.getElementById('myForm');
+      const box = document.getElementById('wfc-my-form');
       if (box.style.display !== "none") {
         box.style.display = "none";
       } else {
@@ -18,13 +18,13 @@ $(function() {
       }
 
 
-      if ($(this).next('.showCart').length) {
-        var show_more = $(this).next('.showCart');
+      if ($(this).next('.wfc-show-Cart').length) {
+        var show_more = $(this).next('.wfc-show-Cart');
       } else {
-        var show_more = $(this).parent().next('.showCart');
+        var show_more = $(this).parent().next('.wfc-show-Cart');
       }
   
-      $('.showCart').not(show_more).slideUp('slow');
+      $('.wfc-show-Cart').not(show_more).slideUp('slow');
   
       show_more.slideToggle('fast');
       $("i", this).toggleClass("fa-cart-shopping fa-close");
@@ -36,23 +36,23 @@ $(function() {
 
 // Coupon code start
 
-$( ".wfc_applyCouponCodeBtn" ).click(function() {
+$( ".wfc-applyCouponCodeBtn" ).click(function() {
 
   var $this = $(this);
   
-  $this.toggleClass("text_change");
+  $this.toggleClass("text-change");
 
-  if ($this.hasClass("text_change")) {
+  if ($this.hasClass("text-change")) {
 
       $this.html("Have any Coupon?");
-      $this.removeClass("cmnBtn couponBtn").addClass("wfc_applyCouponCodeBtnStyle");
-      $( "input.wfc_applyCouponCodeField" ).hide();
+      $this.removeClass("cmnBtn couponBtn").addClass("wfc-applyCouponCodeBtnStyle");
+      $( "input.wfc-applyCouponCodeField" ).hide();
 
   } else {
 
       $this.html("Coupon");
-      $this.addClass("cmnBtn couponBtn").removeClass("wfc_applyCouponCodeBtnStyle");
-      $( "input.wfc_applyCouponCodeField" ).show( "slow", "linear" );
+      $this.addClass("cmnBtn couponBtn").removeClass("wfc-applyCouponCodeBtnStyle");
+      $( "input.wfc-applyCouponCodeField" ).show( "slow", "linear" );
 
   }
 });
